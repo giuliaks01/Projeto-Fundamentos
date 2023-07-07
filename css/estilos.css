@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Jost', sans-serif;
+    background-image: url('../img/bits.png');
+    background-size: auto;
+}
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px black;
+    padding: 40px;
+}
+nav {
+    background-color: white;
+    color: black
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+header li {
+    padding: 10px 15px;
+    font-size: 30px;
+}
+header a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+header a:visited {
+    color: black;
+}
+header a:hover {
+    background-color: black;
+    color: white;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.caixas {
+    width: 950px;
+    background-color: rgba(255, 255, 255, 0.826);
+    border: 5px double rgb(16, 102, 188);
+    border-radius: 10px;
+    margin: 30px;
+    text-align: justify;
+    padding: 15px;
+    transition: all 0.5s;
+}
+.caixas h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+.caixas h1:hover {
+    background-color: black;
+    color: white;
+}
+.caixas p {
+    padding: 10px;
+    line-height: 30px;
+}
+.conversor {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+button:active {
+    background-color: white;
+    color: black;
+}
+.conversor a {
+    text-decoration: none;
+    color:white;
+}
+.conversor a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+.conversor a:active {
+    color: black;
+}
