@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="dec-bin">
+        <h2>Conversor Decimal-Binário</h2>
+        <label for="decimal">Número decimal:</label>
+        <input type="text" id="decimal">
+        <button onclick="converterDecBin()">Converter</button>
+        <p id="resultadoBinario"></p>
+</section>
+
+<section class="bin-dec">
+    <h2>Conversor Binário-Decimal</h2>
+    <label for="binario">Número binário:</label>
+    <input type="text" id="binario">
+    <button onclick="converterBinDec()">Converter</button>
+    <p id="resultadoDecimal"></p>
+</section>
+
+<section class="dec-hex">
+    <h2>Conversor Decimal-Hexadecimal</h2>
+    <label for="decimal">Número decimal:</label>
+    <input type="text" id="decimalHex">
+    <button onclick="converterDecHex()">Converter</button>
+    <p id="resultadoHexadecimal"></p>
+</section>
+
+<section class="hex-dec">
+    <h2>Conversor Hexadecimal-Decimal</h2>
+    <label for="hexadecimal">Número Hexadecimal:</label>
+    <input type="text" id="hexadecimalDec">
+    <button onclick="converterHexDec()">Converter</button>
+    <p id="resultadoDecimalHex"></p>
+</section>
+    <script>
+        function converterBinDec() {
+            var binario = document.getElementById("binario").value;
+            var decimal = binarioParaDecimal(binario);
+            document.getElementById("resultadoDecimal").textContent = "Decimal: " + decimal;
+        }
+        function converterDecBin() {
+            var decimal = document.getElementById("decimal").value;
+            var binario = decimalParaBinario(decimal);
+            document.getElementById("resultadoBinario").textContent = "Binário: " + binario;
+        }
+        function converterDecHex() {
+            var decimal = document.getElementById("decimalHex").value;
+            var hex = decimalParaHexadecimal(decimal);
+            document.getElementById("resultadoHexadecimal").textContent = "Hexadecimal: " + hex;
+        }
+        function converterHexDec() {
+            var hex = document.getElementById("hexadecimalDec").value;
+            var decimal = hexadecimalParaDecimal(hex);
+            document.getElementById("resultadoDecimalHex").textContent = "Decimal: " + decimal;
+        }
+    </script>
+</html>
