@@ -1,2 +1,2 @@
 # Projeto-Fundamentos
-Trabalho sobre Sistemas de Numeração com hospedagem no GitHub.
+Este trabalho consiste na criação de uma página web estática com informações sobre os Sitemas de Numeração Binário, Decimal e Hexidecimal com interação com o sistema de versionamento GitHub. A página criada contém uma breve descrição de cada sistema de numeração e sua relação com a computação, com implementação de um conversor de um sistema de numeração para outros. Ao fim da execução, o trabalho deve ser versionado no GitHub e entregue ao professor no Classroom. 
